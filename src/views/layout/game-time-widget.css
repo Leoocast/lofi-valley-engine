@@ -1,0 +1,131 @@
+/* GameTimeWidget Styles - Fixed position, compact design */
+
+.gameTimeWidget {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 220px;
+  background: var(--color-wood-medium);
+  border: 2px solid var(--color-wood-light);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+  z-index: 200;
+}
+
+.gameTimeWidget__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.gameTimeWidget__timeDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gameTimeWidget__clock {
+  font-family: var(--font-display);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-cream-light);
+  line-height: 1;
+}
+
+.gameTimeWidget__day {
+  font-family: var(--font-display);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-cream-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gameTimeWidget__pauseButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-wood-medium);
+  border: 2px solid var(--color-wood-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  color: var(--color-cream-light);
+  font-size: 1.25rem;
+}
+
+.gameTimeWidget__pauseButton:hover {
+  background: var(--color-wood-dark);
+  transform: scale(1.05);
+}
+
+.gameTimeWidget__pauseButton:active {
+  transform: scale(0.95);
+}
+
+.gameTimeWidget__speedControls {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.gameTimeWidget__speedButton {
+  flex: 1;
+  min-width: 44px;
+  height: 44px;
+  padding: 0;
+  background: var(--color-cream-dark);
+  border: 2px solid var(--color-wood-light);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-wood-dark);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameTimeWidget__speedButton:hover {
+  background: var(--color-cream-medium);
+  transform: translateY(-2px);
+}
+
+.gameTimeWidget__speedButton--active {
+  background: var(--color-green-medium);
+  border-color: var(--color-green-dark);
+  color: var(--color-cream-light);
+  box-shadow: 0 0 0 2px var(--color-green-medium);
+}
+
+/* Floating Menu Button */
+.floatingMenuButton {
+  position: fixed;
+  top: 190px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background: var(--color-wood-medium);
+  border: 2px solid var(--color-wood-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  color: var(--color-cream-light);
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-medium);
+  z-index: 150;
+}
+
+.floatingMenuButton:hover {
+  background: var(--color-wood-light);
+  transform: scale(1.1);
+}

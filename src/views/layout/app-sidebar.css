@@ -1,0 +1,138 @@
+/* AppSidebar Styles - Hotbar color scheme, no header separation */
+
+.appSidebar {
+  position: fixed;
+  top: 250px;
+  right: 20px;
+  width: 260px;
+  max-height: calc(100vh - 270px);
+  background: var(--color-wood-medium);
+  border: 3px solid var(--color-wood-light);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-float);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 140;
+  animation: sidebarPop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: top left;
+}
+
+.appSidebar--closing {
+  animation: sidebarClose 0.2s ease-out forwards;
+}
+
+@keyframes sidebarPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sidebarClose {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.appSidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.appSidebar__title {
+  font-family: var(--font-display);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-cream-light);
+  margin: 0;
+}
+
+.appSidebar__closeButton {
+  background: var(--color-wood-dark);
+  border: 2px solid var(--color-wood-light);
+  border-radius: var(--radius-md);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  color: var(--color-cream-light);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.appSidebar__closeButton:hover {
+  background: var(--color-wood-light);
+  transform: scale(1.1);
+}
+
+.appSidebar__navSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.appSidebar__navLabel {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-cream-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 12px;
+  margin-bottom: 4px;
+}
+
+.appSidebar__navLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--color-wood-dark);
+  border: 2px solid var(--color-wood-light);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-cream-light);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.appSidebar__navLink:hover {
+  background: var(--color-wood-light);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-soft);
+}
+
+.appSidebar__navLink--active {
+  background: var(--color-green-medium);
+  border-color: var(--color-green-dark);
+  color: var(--color-cream-light);
+  box-shadow: 0 0 0 2px var(--color-green-medium);
+}
+
+.appSidebar__navIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}

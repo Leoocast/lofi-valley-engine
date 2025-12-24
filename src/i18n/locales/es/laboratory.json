@@ -1,0 +1,111 @@
+{
+  "welcome": {
+    "title": "Lofi Valley Diseñador",
+    "version": "Versión 1.0",
+    "assetsBy": "Assets por",
+    "introduction": "¡Bienvenido al <strong>Lofi Valley Diseñador</strong>! Diseña y experimenta con layouts de granjas. Aún no hay cultivos aquí...",
+    "keyboardShortcuts": "Atajos de Teclado",
+    "toolbarFeatures": "Funciones de la Barra Superior Derecha",
+    "communityTitle": "Únete a la Comunidad",
+    "communityDescription": "¡Comparte tus diseños, obtén ayuda y conecta con otros jugadores!",
+    "joinDiscord": "Unirse a Discord",
+    "getStarted": "Comenzar",
+    "shortcuts": {
+      "cameraMovement": {
+        "title": "Movimiento de Cámara",
+        "description": "Mueve la cámara por la granja",
+        "key": "Rueda del Mouse / WASD"
+      },
+      "idleMode": {
+        "title": "Modo Libre",
+        "description": "Selecciona, mueve y elimina entidades",
+        "key": "ESC"
+      },
+      "paintMode": {
+        "title": "Modo Pintura",
+        "description": "Pinta tiles de terreno en tu granja",
+        "key": "B"
+      },
+      "toggleGrid": {
+        "title": "Alternar Cuadrícula",
+        "description": "Mostrar/ocultar la cuadrícula",
+        "key": "G"
+      },
+      "toggleWater": {
+        "title": "Alternar Agua",
+        "description": "Mostrar/ocultar tiles de agua",
+        "key": "O"
+      },
+      "hideUI": {
+        "title": "Ocultar UI",
+        "description": "Alternar todos los elementos de UI",
+        "key": "H"
+      }
+    },
+    "features": {
+      "resetGrid": {
+        "title": "Reiniciar Cuadrícula",
+        "description": "Limpiar todos los tiles y entidades"
+      },
+      "timeOfDay": {
+        "title": "Hora del Día",
+        "description": "Cambiar entre día, tarde y noche"
+      },
+      "weather": {
+        "title": "Clima",
+        "description": "Cambiar condiciones climáticas (soleado, lluvia, tormenta, nieve)"
+      },
+      "waterVisibility": {
+        "title": "Visibilidad del Agua",
+        "description": "Alternar visibilidad de tiles de agua"
+      },
+      "gridVisibility": {
+        "title": "Visibilidad de Cuadrícula",
+        "description": "Mostrar u ocultar la cuadrícula"
+      },
+      "gridSize": {
+        "title": "Tamaño de Cuadrícula",
+        "description": "Configurar dimensiones personalizadas (4-128 tiles)"
+      },
+      "saveLoad": {
+        "title": "Guardar/Cargar",
+        "description": "Guarda y carga tus diseños de granja"
+      }
+    }
+  },
+  "toolbar": {
+    "resetFarm": "Reiniciar Granja",
+    "resetConfirm": "¿Reiniciar la granja? Esto eliminará todos los tiles y entidades.",
+    "saveLoad": "Guardar/Cargar",
+    "spritesheets": "Spritesheets",
+    "atlasEditor": "Editor de Atlas"
+  },
+  "farmManager": {
+    "title": "Gestor de Granjas",
+    "currentFarm": "GRANJA ACTUAL",
+    "untitled": "Granja Sin Nombre",
+    "save": "Guardar",
+    "saved": "¡Guardado!",
+    "download": "Descargar",
+    "import": "Importar",
+    "new": "Nueva",
+    "savedFarms": "GRANJAS GUARDADAS",
+    "noFarms": "Aún no hay granjas guardadas",
+    "load": "Cargar",
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Eliminar esta granja?",
+    "importError": "Error al importar archivo de granja"
+  },
+  "time": {
+    "day": "Día",
+    "afternoon": "Tarde",
+    "night": "Noche",
+    "morning": "Mañana"
+  },
+  "weather": {
+    "sunny": "Soleado",
+    "rain": "Lluvia",
+    "storm": "Tormenta",
+    "snow": "Nieve"
+  }
+}

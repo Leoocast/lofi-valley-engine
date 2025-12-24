@@ -1,0 +1,28 @@
+{
+  "title": "Lofi Valley Prototype Build",
+  "subtitle": "Select a mode to begin",
+  "cards": {
+    "designer": {
+      "title": "Designer",
+      "description": "Farm Laboratory & Tools"
+    },
+    "crops": {
+      "title": "Crops",
+      "description": "Crop Testing Environment"
+    },
+    "game": {
+      "title": "Game",
+      "description": "Coming Soon..."
+    }
+  },
+  "prototype": {
+    "thanks": "Thanks for trying Lofi Valley Engine!",
+    "notice": "This is the current prototype version in active development. I don't have the audio system ready yet (ironic for a lofi game, I know!).",
+    "openRadio": "Open Lofi Valley Radio (may take a moment to load)"
+  },
+  "social": {
+    "github": "GitHub",
+    "discord": "Discord",
+    "bluesky": "Bluesky"
+  }
+}

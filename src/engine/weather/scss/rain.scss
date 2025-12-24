@@ -1,0 +1,280 @@
+// Rain effect animations
+.rain-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__drop {
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      rgba(174, 194, 224, 0.8),
+      rgba(174, 194, 224, 0.3)
+    );
+    animation: rain-fall linear infinite;
+    transform-origin: top left;
+    transform: rotate(10deg);
+
+    // Splash effect at the end
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: -4px;
+      width: 10px;
+      height: 6px;
+      border-top: 2px dotted rgba(174, 194, 224, 0.8);
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    &--1::after {
+      animation: rain-splash 0.8s linear infinite 0.02s;
+    }
+    &--2::after {
+      animation: rain-splash 0.9s linear infinite 0.37s;
+    }
+    &--3::after {
+      animation: rain-splash 0.5s linear infinite 0.61s;
+    }
+    &--4::after {
+      animation: rain-splash 0.85s linear infinite 0.14s;
+    }
+    &--5::after {
+      animation: rain-splash 0.55s linear infinite 0.49s;
+    }
+    &--6::after {
+      animation: rain-splash 0.8s linear infinite 0.73s;
+    }
+    &--7::after {
+      animation: rain-splash 0.9s linear infinite 0.26s;
+    }
+    &--8::after {
+      animation: rain-splash 0.52s linear infinite 0.58s;
+    }
+    &--9::after {
+      animation: rain-splash 0.85s linear infinite 0.41s;
+    }
+    &--10::after {
+      animation: rain-splash 0.6s linear infinite 0.69s;
+    }
+    &--11::after {
+      animation: rain-splash 0.9s linear infinite 0.08s;
+    }
+    &--12::after {
+      animation: rain-splash 0.53s linear infinite 0.54s;
+    }
+    &--13::after {
+      animation: rain-splash 0.85s linear infinite 0.22s;
+    }
+    &--14::after {
+      animation: rain-splash 0.58s linear infinite 0.66s;
+    }
+    &--15::after {
+      animation: rain-splash 0.8s linear infinite 0.33s;
+    }
+    &--16::after {
+      animation: rain-splash 0.9s linear infinite 0.17s;
+    }
+    &--17::after {
+      animation: rain-splash 0.54s linear infinite 0.46s;
+    }
+    &--18::after {
+      animation: rain-splash 0.85s linear infinite 0.71s;
+    }
+    &--19::after {
+      animation: rain-splash 0.57s linear infinite 0.11s;
+    }
+    &--20::after {
+      animation: rain-splash 0.7s linear infinite 0.43s;
+    }
+
+    &--1 {
+      left: 10%;
+      height: 19px;
+      animation-duration: 0.8s;
+      animation-delay: 0.02s;
+    }
+    &--2 {
+      left: 20%;
+      height: 26px;
+      animation-duration: 0.9s;
+      animation-delay: 0.37s;
+    }
+    &--3 {
+      left: 30%;
+      height: 14px;
+      animation-duration: 0.5s;
+      animation-delay: 0.61s;
+    }
+    &--4 {
+      left: 40%;
+      height: 22px;
+      animation-duration: 0.85s;
+      animation-delay: 0.14s;
+    }
+    &--5 {
+      left: 50%;
+      height: 17px;
+      animation-duration: 0.55s;
+      animation-delay: 0.49s;
+    }
+    &--6 {
+      left: 60%;
+      height: 20px;
+      animation-duration: 0.8s;
+      animation-delay: 0.73s;
+    }
+    &--7 {
+      left: 70%;
+      height: 28px;
+      animation-duration: 0.9s;
+      animation-delay: 0.26s;
+    }
+    &--8 {
+      left: 80%;
+      height: 15px;
+      animation-duration: 0.52s;
+      animation-delay: 0.58s;
+    }
+    &--9 {
+      left: 90%;
+      height: 24px;
+      animation-duration: 0.85s;
+      animation-delay: 0.41s;
+    }
+    &--10 {
+      left: 5%;
+      height: 18px;
+      animation-duration: 0.6s;
+      animation-delay: 0.69s;
+    }
+    &--11 {
+      left: 15%;
+      height: 27px;
+      animation-duration: 0.9s;
+      animation-delay: 0.08s;
+    }
+    &--12 {
+      left: 25%;
+      height: 16px;
+      animation-duration: 0.53s;
+      animation-delay: 0.54s;
+    }
+    &--13 {
+      left: 35%;
+      height: 21px;
+      animation-duration: 0.85s;
+      animation-delay: 0.22s;
+    }
+    &--14 {
+      left: 45%;
+      height: 19px;
+      animation-duration: 0.58s;
+      animation-delay: 0.66s;
+    }
+    &--15 {
+      left: 55%;
+      height: 25px;
+      animation-duration: 0.8s;
+      animation-delay: 0.33s;
+    }
+    &--16 {
+      left: 65%;
+      height: 28px;
+      animation-duration: 0.9s;
+      animation-delay: 0.17s;
+    }
+    &--17 {
+      left: 75%;
+      height: 14px;
+      animation-duration: 0.54s;
+      animation-delay: 0.46s;
+    }
+    &--18 {
+      left: 85%;
+      height: 23px;
+      animation-duration: 0.85s;
+      animation-delay: 0.71s;
+    }
+    &--19 {
+      left: 95%;
+      height: 17px;
+      animation-duration: 0.57s;
+      animation-delay: 0.11s;
+    }
+    &--20 {
+      left: 12%;
+      height: 20px;
+      animation-duration: 0.7s;
+      animation-delay: 0.43s;
+    }
+  }
+}
+
+@keyframes rain-fall {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(10deg);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(calc(75vh - 50px)) translateX(calc(-13vh - 9px))
+      rotate(10deg);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(calc(90vh + 20px)) translateX(calc(-16vh - 16px))
+      rotate(10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px)) translateX(calc(-18vh - 18px))
+      rotate(10deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rain-splash {
+  0%,
+  80% {
+    opacity: 0;
+    transform: scale(0) rotate(-10deg);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  90% {
+    opacity: 0.6;
+    transform: scale(1.2) rotate(-10deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.8) rotate(-10deg);
+  }
+}
+
+// Overlay for darkening during rain
+.rain-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 120, 150, 0.2);
+  pointer-events: none;
+  z-index: 9999;
+}

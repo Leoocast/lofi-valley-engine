@@ -1,0 +1,66 @@
+/* DecorationMenu Styles - Lo-Fi Valley Design */
+
+.decorationMenu {
+  position: fixed;
+  bottom: 140px;
+  right: 456px;
+  z-index: 50;
+}
+
+.decorationMenu__container {
+  background: var(--color-wood-dark);
+  border: 3px solid var(--color-wood-light);
+  border-radius: var(--radius-lg);
+  padding: 8px;
+  box-shadow: var(--shadow-float);
+}
+
+.decorationMenu__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.decorationMenu__button {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: var(--color-wood-medium);
+  border: 2px solid var(--color-wood-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-soft);
+}
+
+.decorationMenu__button:hover {
+  background: var(--color-cream-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.decorationMenu__button--active {
+  background: var(--color-green-medium);
+  border-color: var(--color-green-dark);
+  box-shadow:
+    0 0 0 3px var(--color-green-medium),
+    var(--shadow-medium);
+}
+
+.decorationMenu__emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.decorationMenu__label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-cream-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,19 @@
+/* Harvest animation for crops */
+@keyframes crop-harvest {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.crop-harvesting {
+  animation: crop-harvest 400ms cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}

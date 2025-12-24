@@ -1,0 +1,39 @@
+@keyframes waterFlow {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -64px 0; /* 4 frames × 16px = 64px */
+  }
+}
+
+.water-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Behind grid and entities */
+  background-image: url("/spritesheets/autotiling/water/Water-spritesheet.png");
+  background-repeat: repeat;
+  background-size: 64px 16px; /* Full spritesheet size */
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  pointer-events: none; /* Don't interfere with clicks */
+
+  /* Animate through 4 frames */
+  animation: waterFlow 0.8s steps(4) infinite;
+
+  /* GPU acceleration for better performance */
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  backface-visibility: hidden;
+
+  /* Dark teal overlay to dim the bright water */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(6, 78, 78, 0.2); /* Teal overlay */
+    pointer-events: none;
+  }
+}

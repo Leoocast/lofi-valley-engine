@@ -1,0 +1,72 @@
+{
+  "welcome": {
+    "title": "Laboratorio de Cultivos",
+    "version": "Versión 1.0",
+    "assetsBy": "Assets por",
+    "introduction": "¡Bienvenido al <strong>Laboratorio de Cultivos</strong>! Experimenta con las mecánicas de agricultura - prepara la tierra, planta semillas, riega los cultivos y cosecha tu producción.",
+    "farmingTools": "Herramientas de Agricultura",
+    "gameMechanics": "Mecánicas de Juego",
+    "communityTitle": "Únete a la Comunidad",
+    "communityDescription": "¡Comparte tus granjas, obtén ayuda y conecta con otros jugadores!",
+    "joinDiscord": "Unirse a Discord",
+    "startFarming": "Comenzar a Cultivar",
+    "tools": {
+      "hoe": {
+        "title": "🪓 Azada",
+        "description": "Prepara la tierra para plantar"
+      },
+      "seeds": {
+        "title": "🌱 Semillas",
+        "description": "Selecciona semillas del inventario y plántalas en tierra preparada"
+      },
+      "wateringCan": {
+        "title": "💧 Regadera",
+        "description": "Riega los cultivos para que crezcan a la siguiente etapa"
+      },
+      "scythe": {
+        "title": "🌾 Guadaña",
+        "description": "Cosecha cultivos maduros para recolectar productos"
+      }
+    },
+    "mechanics": {
+      "growthStages": {
+        "title": "Etapas de Crecimiento",
+        "description": "Los cultivos avanzan de etapa cuando se riegan - cada riego avanza una etapa"
+      },
+      "harvest": {
+        "title": "Cosecha",
+        "description": "Usa la guadaña en cultivos maduros (etapa final) para cosechar y recolectar items"
+      },
+      "timeControl": {
+        "title": "Control del Tiempo ⏱️",
+        "description": "Acelera o ralentiza el tiempo del juego para ver crecer los cultivos más rápido"
+      },
+      "inventory": {
+        "title": "Inventario",
+        "description": "Presiona I para abrir el inventario - arrastra semillas a la barra para acceso rápido"
+      },
+      "hotbar": {
+        "title": "Barra Rápida",
+        "description": "Presiona Q para cambiar entre las diferentes barras - puedes arrastrar mientras cambias"
+      },
+      "camera": {
+        "title": "Cámara",
+        "description": "Usa WASD para mover la cámara, scroll para zoom"
+      }
+    }
+  },
+  "inventory": {
+    "title": "Inventario",
+    "items": "Items",
+    "tools": "Herramientas"
+  },
+  "tooltip": {
+    "ready": "¡Listo!",
+    "dead": "Muerto",
+    "readyToHarvest": "¡Listo para cosechar!",
+    "needsWater": "Necesita agua",
+    "growing": "Creciendo...",
+    "watered": "Regado",
+    "stage": "Etapa"
+  }
+}

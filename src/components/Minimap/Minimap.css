@@ -1,0 +1,27 @@
+/* Minimap Styles - Dark Theme to match Laboratory UI */
+
+.minimap {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 216px; /* 200px content + 8px padding each side */
+  height: 216px;
+  background: rgba(20, 20, 30, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  overflow: visible;
+  z-index: 100;
+}
+
+.minimap__content {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: rgba(40, 40, 50, 0.6);
+  border-radius: 4px;
+  overflow: visible;
+}

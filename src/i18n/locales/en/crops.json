@@ -1,0 +1,72 @@
+{
+  "welcome": {
+    "title": "Crops Laboratory",
+    "version": "Version 1.0",
+    "assetsBy": "Assets by",
+    "introduction": "Welcome to the <strong>Crops Laboratory</strong>! Experiment with farming mechanics - till soil, plant seeds, water crops, and harvest your produce.",
+    "farmingTools": "Farming Tools",
+    "gameMechanics": "Game Mechanics",
+    "communityTitle": "Join our Community",
+    "communityDescription": "Share your farms, get help, and connect with other players!",
+    "joinDiscord": "Join Discord",
+    "startFarming": "Start Farming",
+    "tools": {
+      "hoe": {
+        "title": "🪓 Hoe",
+        "description": "Till the soil to prepare it for planting"
+      },
+      "seeds": {
+        "title": "🌱 Seeds",
+        "description": "Select seeds from inventory and plant on tilled soil"
+      },
+      "wateringCan": {
+        "title": "💧 Watering Can",
+        "description": "Water crops to make them grow to the next stage"
+      },
+      "scythe": {
+        "title": "🌾 Scythe",
+        "description": "Harvest mature crops to collect produce"
+      }
+    },
+    "mechanics": {
+      "growthStages": {
+        "title": "Growth Stages",
+        "description": "Crops progress through stages when watered - each watering advances one stage"
+      },
+      "harvest": {
+        "title": "Harvest",
+        "description": "Use the scythe on mature crops (final stage) to harvest and collect items"
+      },
+      "timeControl": {
+        "title": "Time Control ⏱️",
+        "description": "Speed up or slow down game time to see crops grow faster"
+      },
+      "inventory": {
+        "title": "Inventory",
+        "description": "Press I to open inventory - drag seeds to hotbar for quick access"
+      },
+      "hotbar": {
+        "title": "Hotbar",
+        "description": "Press Q to loop over the different hotbars - can drag while switching"
+      },
+      "camera": {
+        "title": "Camera",
+        "description": "Use WASD to pan camera, scroll to zoom in/out"
+      }
+    }
+  },
+  "inventory": {
+    "title": "Inventory",
+    "items": "Items",
+    "tools": "Tools"
+  },
+  "tooltip": {
+    "ready": "Ready!",
+    "dead": "Dead",
+    "readyToHarvest": "Ready to harvest!",
+    "needsWater": "Needs water",
+    "growing": "Growing...",
+    "watered": "Watered",
+    "stage": "Stage"
+  }
+}

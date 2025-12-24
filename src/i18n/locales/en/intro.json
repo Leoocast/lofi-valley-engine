@@ -1,0 +1,27 @@
+{
+  "contract": {
+    "title": "BOTANICAL RHYTHMS ASSOCIATION",
+    "applicationTitle": "NEW PRODUCER APPLICATION",
+    "assignment": "Assignment",
+    "assignmentValue": "Lofi Valley (Rehabilitation Zone)",
+    "status": "Status",
+    "statusValue": "Rookie",
+    "specialty": "Specialty",
+    "specialtyValue": "Experimental Fusion",
+    "genreName": "Genre Name",
+    "genreValue": "JUNK",
+    "producerName": "Producer Name",
+    "namePlaceholder": "Enter your name...",
+    "signButton": "SIGN CONTRACT",
+    "processing": "PROCESSING...",
+    "approved": "APPROVED"
+  },
+  "arrival": {
+    "welcome": "Welcome to Lofi Valley",
+    "producer": "Producer",
+    "startButton": "Let's Start! 🎵"
+  },
+  "busTransition": {
+    "onTheWay": "On the way to Lofi Valley..."
+  }
+}

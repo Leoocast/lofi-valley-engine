@@ -1,0 +1,97 @@
+### Concave set
+
+4-0
+Vecinos E,S
+. . .
+. # #
+. # .
+
+5-0
+Vecinos W,SW,S,E
+. . .
+# # #
+# # .
+
+6-0
+Vecinos W,S,E,SE
+. . .
+# # #
+. # #
+
+7-0
+Vecinos W,S
+. . .
+# # .
+. # .
+
+4-1
+Vecinos N, NE,E,S
+. # #
+. # #
+. # .
+
+5-1
+Vecinos N, NE,E,S,SW,W,NW
+# # #
+# # #
+# # .
+
+6-1
+Vecinos N,NE,E,SE,S,W,NW
+# # #
+# # #
+. # #
+
+7-1
+Vecinos N,S,W,NW
+# # .
+# # .
+. # .
+
+4-2
+Vecinos N,E,SE,S
+. # .
+. # #
+. # #
+
+5-2
+Vecinos N,E,SE,S,SW,W,NW
+# # .
+# # #
+# # #
+
+6-2
+Vecinos N,NE,E,SE,S,SW,W
+. # #
+# # #
+# # #
+
+7-2
+Vecinos N,S,SW,W
+. # . 
+# # . 
+# # . 
+
+4-3
+Vecinos N,E
+. # .
+. # #
+. . .
+
+5-3
+Vecinos N,E,W,NW
+# # .
+# # #
+. . .
+
+6-3
+Vecinos N,NE,E,W
+. # #
+# # #
+. . .
+
+7-3
+Vecinos N,W
+. # .
+# # .
+. . .

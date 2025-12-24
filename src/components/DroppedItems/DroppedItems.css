@@ -1,0 +1,24 @@
+.droppedItem {
+  position: absolute;
+  pointer-events: none;
+}
+
+.droppedItem__sprite {
+  animation: dropPopIn 0.35s ease-out forwards;
+  transform-origin: center center;
+}
+
+@keyframes dropPopIn {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(calc(var(--offset-x) * 0.2), -12px) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--offset-x) * 0.3), -24px) scale(0.8);
+    opacity: 0;
+  }
+}

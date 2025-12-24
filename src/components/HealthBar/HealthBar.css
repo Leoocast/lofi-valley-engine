@@ -1,0 +1,19 @@
+/* HP Bar death animation - Flash + Fade */
+@keyframes hp-bar-death {
+  0% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  25% {
+    opacity: 1;
+    filter: brightness(3) saturate(2);
+  }
+  100% {
+    opacity: 0;
+    filter: brightness(1);
+  }
+}
+
+.hp-bar-dying {
+  animation: hp-bar-death 200ms ease-out forwards;
+}

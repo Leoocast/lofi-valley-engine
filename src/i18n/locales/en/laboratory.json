@@ -1,0 +1,111 @@
+{
+  "welcome": {
+    "title": "Lofi Valley Designer",
+    "version": "Version 1.0",
+    "assetsBy": "Assets by",
+    "introduction": "Welcome to the <strong>Lofi Valley Designer</strong>! Design and experiment with farm layouts. No crops here yet...",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "toolbarFeatures": "Upper Right Toolbar Features",
+    "communityTitle": "Join our Community",
+    "communityDescription": "Share your designs, get help, and connect with other players!",
+    "joinDiscord": "Join Discord",
+    "getStarted": "Get Started",
+    "shortcuts": {
+      "cameraMovement": {
+        "title": "Camera Movement",
+        "description": "Pan the camera around the farm",
+        "key": "Mouse Middle / WASD"
+      },
+      "idleMode": {
+        "title": "Idle Mode",
+        "description": "Select, move, and delete entities",
+        "key": "ESC"
+      },
+      "paintMode": {
+        "title": "Paint Mode",
+        "description": "Paint terrain tiles on your farm grid",
+        "key": "B"
+      },
+      "toggleGrid": {
+        "title": "Toggle Grid",
+        "description": "Show/hide the grid overlay",
+        "key": "G"
+      },
+      "toggleWater": {
+        "title": "Toggle Water",
+        "description": "Show/hide water tiles",
+        "key": "O"
+      },
+      "hideUI": {
+        "title": "Hide UI",
+        "description": "Toggle all UI elements",
+        "key": "H"
+      }
+    },
+    "features": {
+      "resetGrid": {
+        "title": "Reset Grid",
+        "description": "Clear all tiles and entities"
+      },
+      "timeOfDay": {
+        "title": "Time of Day",
+        "description": "Switch between day, afternoon, and night"
+      },
+      "weather": {
+        "title": "Weather",
+        "description": "Change weather conditions (sunny, rain, storm, snow)"
+      },
+      "waterVisibility": {
+        "title": "Water Visibility",
+        "description": "Toggle water tile visibility"
+      },
+      "gridVisibility": {
+        "title": "Grid Visibility",
+        "description": "Show or hide the grid overlay"
+      },
+      "gridSize": {
+        "title": "Grid Size",
+        "description": "Configure custom grid dimensions (4-128 tiles)"
+      },
+      "saveLoad": {
+        "title": "Save/Load",
+        "description": "Save and load your farm designs"
+      }
+    }
+  },
+  "toolbar": {
+    "resetFarm": "Reset Farm",
+    "resetConfirm": "Reset the farm? This will clear all tiles and entities.",
+    "saveLoad": "Save/Load",
+    "spritesheets": "Spritesheets",
+    "atlasEditor": "Atlas Editor"
+  },
+  "farmManager": {
+    "title": "Farm Manager",
+    "currentFarm": "CURRENT FARM",
+    "untitled": "Untitled Farm",
+    "save": "Save",
+    "saved": "Saved!",
+    "download": "Download",
+    "import": "Import",
+    "new": "New",
+    "savedFarms": "SAVED FARMS",
+    "noFarms": "No saved farms yet",
+    "load": "Load",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this farm?",
+    "importError": "Failed to import farm file"
+  },
+  "time": {
+    "day": "Day",
+    "afternoon": "Afternoon",
+    "night": "Night",
+    "morning": "Morning"
+  },
+  "weather": {
+    "sunny": "Sunny",
+    "rain": "Rain",
+    "storm": "Storm",
+    "snow": "Snow"
+  }
+}

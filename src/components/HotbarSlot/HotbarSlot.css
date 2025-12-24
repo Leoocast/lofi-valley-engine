@@ -1,0 +1,61 @@
+/* HotbarSlot Styles - Lo-Fi Valley Design */
+
+.hotbarSlot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--color-cream-light);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-cream-dark);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-soft);
+}
+
+.hotbarSlot:hover {
+  background: var(--color-cream-medium);
+  transform: translateY(-2px);
+}
+
+.hotbarSlot--active {
+  background: var(--color-cream-medium);
+  border: 2px solid var(--color-green-medium);
+  box-shadow:
+    var(--shadow-medium),
+    0 0 0 3px rgba(168, 198, 134, 0.3);
+}
+
+.hotbarSlot--active:hover {
+  transform: none;
+}
+
+.hotbarSlot__quantityBadge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--color-wood-dark);
+  color: var(--color-cream-light);
+  border-radius: var(--radius-full);
+  padding: 2px 6px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-handwritten);
+  box-shadow: var(--shadow-soft);
+}
+
+.hotbarSlot__shortcutBadge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background: var(--color-green-dark);
+  color: var(--color-cream-light);
+  border-radius: var(--radius-sm);
+  padding: 2px 5px;
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-primary);
+  box-shadow: var(--shadow-soft);
+}

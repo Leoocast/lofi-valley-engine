@@ -1,0 +1,169 @@
+/**
+ * Global CSS for GameEntities animations
+ */
+
+/* Shake animation - Horizontal wobble (tools hitting) */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateZ(0) translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateZ(0) translateX(-2px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateZ(0) translateX(2px);
+  }
+}
+
+/* Bounce animation - Vertical bounce (item pickup, interaction) */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateZ(0) translateY(0);
+  }
+  50% {
+    transform: translateZ(0) translateY(-4px);
+  }
+}
+
+/* Flash animation - Opacity flash (damage, special effect) */
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Hurt animation - Red tint + shake (when entity takes damage) */
+@keyframes hurt {
+  0%,
+  100% {
+    filter: none;
+    transform: translateZ(0) translateX(0);
+  }
+  25%,
+  75% {
+    filter: brightness(1.5) saturate(2);
+    transform: translateZ(0) translateX(-1px);
+  }
+  50% {
+    filter: brightness(1.5) saturate(2);
+    transform: translateZ(0) translateX(1px);
+  }
+}
+
+/* Squish animation - SÚPER JUICY! Gelatina/bounce con deformación */
+@keyframes squish {
+  0% {
+    transform: translateZ(0) scale(1, 1);
+  }
+  15% {
+    transform: translateZ(0) scale(1.15, 0.85); /* Aplasta vertical */
+  }
+  30% {
+    transform: translateZ(0) scale(0.9, 1.1); /* Estira vertical */
+  }
+  45% {
+    transform: translateZ(0) scale(1.05, 0.95); /* Aplasta suave */
+  }
+  60% {
+    transform: translateZ(0) scale(0.98, 1.02); /* Micro oscilación */
+  }
+  75% {
+    transform: translateZ(0) scale(1.01, 0.99);
+  }
+  90% {
+    transform: translateZ(0) scale(1, 1);
+  }
+  100% {
+    transform: translateZ(0) scale(1, 1);
+  }
+}
+
+/* Impact animation - CARTOON HIT! Stretch diagonal exagerado + skew */
+@keyframes impact {
+  0% {
+    transform: translateZ(0) scale(1, 1) skew(0deg, 0deg);
+  }
+  20% {
+    /* Stretch diagonal hacia atrás (como si el golpe viniera de la derecha) */
+    transform: translateZ(0) scale(1.3, 0.7) skew(-12deg, 0deg) translateX(-3px);
+  }
+  40% {
+    /* Rebote hacia adelante */
+    transform: translateZ(0) scale(0.8, 1.2) skew(8deg, 0deg) translateX(2px);
+  }
+  60% {
+    /* Oscilación menor */
+    transform: translateZ(0) scale(1.05, 0.95) skew(-4deg, 0deg)
+      translateX(-1px);
+  }
+  80% {
+    /* Micro ajuste */
+    transform: translateZ(0) scale(0.98, 1.02) skew(2deg, 0deg);
+  }
+  100% {
+    transform: translateZ(0) scale(1, 1) skew(0deg, 0deg);
+  }
+}
+
+/* Chop animation - CARTOON CHOP! Base fija, skew de arriba hacia izq */
+@keyframes chop {
+  0% {
+    transform: translateZ(0) scaleY(1) skewX(0deg);
+    transform-origin: bottom center;
+  }
+  25% {
+    /* Golpe inicial - skew hacia izquierda desde arriba */
+    transform: translateZ(0) scaleY(0.95) skewX(-8deg);
+    transform-origin: bottom center;
+  }
+  50% {
+    /* Rebote hacia derecha */
+    transform: translateZ(0) scaleY(1.05) skewX(5deg);
+    transform-origin: bottom center;
+  }
+  70% {
+    /* Pequeña oscilación */
+    transform: translateZ(0) scaleY(0.98) skewX(-2deg);
+    transform-origin: bottom center;
+  }
+  85% {
+    /* Micro ajuste */
+    transform: translateZ(0) scaleY(1.01) skewX(1deg);
+    transform-origin: bottom center;
+  }
+  100% {
+    transform: translateZ(0) scaleY(1) skewX(0deg);
+    transform-origin: bottom center;
+  }
+}
+
+/* Die animation - POP! Crece y luego desaparece al centro (universal) */
+@keyframes die {
+  0% {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }
+  40% {
+    /* Pop up! - crece rápido */
+    opacity: 1;
+    transform: translateZ(0) scale(1.08);
+  }
+  100% {
+    /* Shrink to center - desaparece al centro */
+    opacity: 0;
+    transform: translateZ(0) scale(0);
+  }
+}

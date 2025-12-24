@@ -1,0 +1,497 @@
+// Storm effect animations
+.storm-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.storm {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__drop {
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(
+      to bottom,
+      rgba(174, 194, 224, 0.9),
+      rgba(174, 194, 224, 0.4)
+    );
+    animation: storm-fall linear infinite;
+    transform-origin: top left;
+    transform: rotate(15deg);
+
+    // Splash effect at the end
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      left: -5px;
+      width: 13px;
+      height: 7px;
+      border-top: 3px dotted rgba(174, 194, 224, 0.9);
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    &--1::after {
+      animation: splash 0.5s linear infinite 0s;
+    }
+    &--2::after {
+      animation: splash 0.55s linear infinite 0.1s;
+    }
+    &--3::after {
+      animation: splash 0.3s linear infinite 0.2s;
+    }
+    &--4::after {
+      animation: splash 0.5s linear infinite 0.05s;
+    }
+    &--5::after {
+      animation: splash 0.25s linear infinite 0.15s;
+    }
+    &--6::after {
+      animation: splash 0.52s linear infinite 0.25s;
+    }
+    &--7::after {
+      animation: splash 0.47s linear infinite 0.08s;
+    }
+    &--8::after {
+      animation: splash 0.28s linear infinite 0.18s;
+    }
+    &--9::after {
+      animation: splash 0.49s linear infinite 0.12s;
+    }
+    &--10::after {
+      animation: splash 0.32s linear infinite 0.22s;
+    }
+    &--11::after {
+      animation: splash 0.48s linear infinite 0.03s;
+    }
+    &--12::after {
+      animation: splash 0.5s linear infinite 0.13s;
+    }
+    &--13::after {
+      animation: splash 0.3s linear infinite 0.23s;
+    }
+    &--14::after {
+      animation: splash 0.52s linear infinite 0.06s;
+    }
+    &--15::after {
+      animation: splash 0.35s linear infinite 0.16s;
+    }
+    &--16::after {
+      animation: splash 0.5s linear infinite 0.26s;
+    }
+    &--17::after {
+      animation: splash 0.27s linear infinite 0.09s;
+    }
+    &--18::after {
+      animation: splash 0.51s linear infinite 0.19s;
+    }
+    &--19::after {
+      animation: splash 0.33s linear infinite 0.14s;
+    }
+    &--20::after {
+      animation: splash 0.5s linear infinite 0.24s;
+    }
+    &--21::after {
+      animation: splash 0.26s linear infinite 0.04s;
+    }
+    &--22::after {
+      animation: splash 0.51s linear infinite 0.14s;
+    }
+    &--23::after {
+      animation: splash 0.31s linear infinite 0.24s;
+    }
+    &--24::after {
+      animation: splash 0.5s linear infinite 0.07s;
+    }
+    &--25::after {
+      animation: splash 0.29s linear infinite 0.17s;
+    }
+    &--26::after {
+      animation: splash 0.52s linear infinite 0.27s;
+    }
+    &--27::after {
+      animation: splash 0.34s linear infinite 0.02s;
+    }
+    &--28::after {
+      animation: splash 0.5s linear infinite 0.12s;
+    }
+    &--29::after {
+      animation: splash 0.28s linear infinite 0.22s;
+    }
+    &--30::after {
+      animation: splash 0.51s linear infinite 0.05s;
+    }
+    &--31::after {
+      animation: splash 0.32s linear infinite 0.15s;
+    }
+    &--32::after {
+      animation: splash 0.5s linear infinite 0.25s;
+    }
+    &--33::after {
+      animation: splash 0.3s linear infinite 0.08s;
+    }
+    &--34::after {
+      animation: splash 0.48s linear infinite 0.18s;
+    }
+    &--35::after {
+      animation: splash 0.35s linear infinite 0.28s;
+    }
+    &--36::after {
+      animation: splash 0.5s linear infinite 0.11s;
+    }
+    &--37::after {
+      animation: splash 0.27s linear infinite 0.21s;
+    }
+    &--38::after {
+      animation: splash 0.49s linear infinite 0.01s;
+    }
+    &--39::after {
+      animation: splash 0.33s linear infinite 0.11s;
+    }
+    &--40::after {
+      animation: splash 0.48s linear infinite 0.21s;
+    }
+
+    &--1 {
+      left: 5%;
+      height: 25px;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+    }
+    &--2 {
+      left: 10%;
+      height: 42px;
+      animation-duration: 0.55s;
+      animation-delay: 0.1s;
+    }
+    &--3 {
+      left: 15%;
+      height: 20px;
+      animation-duration: 0.3s;
+      animation-delay: 0.2s;
+    }
+    &--4 {
+      left: 20%;
+      height: 45px;
+      animation-duration: 0.5s;
+      animation-delay: 0.05s;
+    }
+    &--5 {
+      left: 25%;
+      height: 18px;
+      animation-duration: 0.25s;
+      animation-delay: 0.15s;
+    }
+    &--6 {
+      left: 30%;
+      height: 36px;
+      animation-duration: 0.52s;
+      animation-delay: 0.25s;
+    }
+    &--7 {
+      left: 35%;
+      height: 50px;
+      animation-duration: 0.47s;
+      animation-delay: 0.08s;
+    }
+    &--8 {
+      left: 40%;
+      height: 22px;
+      animation-duration: 0.28s;
+      animation-delay: 0.18s;
+    }
+    &--9 {
+      left: 45%;
+      height: 40px;
+      animation-duration: 0.49s;
+      animation-delay: 0.12s;
+    }
+    &--10 {
+      left: 50%;
+      height: 16px;
+      animation-duration: 0.32s;
+      animation-delay: 0.22s;
+    }
+    &--11 {
+      left: 55%;
+      height: 44px;
+      animation-duration: 0.48s;
+      animation-delay: 0.03s;
+    }
+    &--12 {
+      left: 60%;
+      height: 48px;
+      animation-duration: 0.5s;
+      animation-delay: 0.13s;
+    }
+    &--13 {
+      left: 65%;
+      height: 19px;
+      animation-duration: 0.3s;
+      animation-delay: 0.23s;
+    }
+    &--14 {
+      left: 70%;
+      height: 38px;
+      animation-duration: 0.52s;
+      animation-delay: 0.06s;
+    }
+    &--15 {
+      left: 75%;
+      height: 24px;
+      animation-duration: 0.35s;
+      animation-delay: 0.16s;
+    }
+    &--16 {
+      left: 80%;
+      height: 52px;
+      animation-duration: 0.5s;
+      animation-delay: 0.26s;
+    }
+    &--17 {
+      left: 85%;
+      height: 21px;
+      animation-duration: 0.27s;
+      animation-delay: 0.09s;
+    }
+    &--18 {
+      left: 90%;
+      height: 46px;
+      animation-duration: 0.51s;
+      animation-delay: 0.19s;
+    }
+    &--19 {
+      left: 95%;
+      height: 17px;
+      animation-duration: 0.33s;
+      animation-delay: 0.14s;
+    }
+    &--20 {
+      left: 8%;
+      height: 39px;
+      animation-duration: 0.5s;
+      animation-delay: 0.24s;
+    }
+    &--21 {
+      left: 12%;
+      height: 15px;
+      animation-duration: 0.26s;
+      animation-delay: 0.04s;
+    }
+    &--22 {
+      left: 18%;
+      height: 43px;
+      animation-duration: 0.51s;
+      animation-delay: 0.14s;
+    }
+    &--23 {
+      left: 22%;
+      height: 23px;
+      animation-duration: 0.31s;
+      animation-delay: 0.24s;
+    }
+    &--24 {
+      left: 28%;
+      height: 49px;
+      animation-duration: 0.5s;
+      animation-delay: 0.07s;
+    }
+    &--25 {
+      left: 32%;
+      height: 18px;
+      animation-duration: 0.29s;
+      animation-delay: 0.17s;
+    }
+    &--26 {
+      left: 38%;
+      height: 41px;
+      animation-duration: 0.52s;
+      animation-delay: 0.27s;
+    }
+    &--27 {
+      left: 42%;
+      height: 20px;
+      animation-duration: 0.34s;
+      animation-delay: 0.02s;
+    }
+    &--28 {
+      left: 48%;
+      height: 47px;
+      animation-duration: 0.5s;
+      animation-delay: 0.12s;
+    }
+    &--29 {
+      left: 52%;
+      height: 16px;
+      animation-duration: 0.28s;
+      animation-delay: 0.22s;
+    }
+    &--30 {
+      left: 58%;
+      height: 51px;
+      animation-duration: 0.51s;
+      animation-delay: 0.05s;
+    }
+    &--31 {
+      left: 62%;
+      height: 22px;
+      animation-duration: 0.32s;
+      animation-delay: 0.15s;
+    }
+    &--32 {
+      left: 68%;
+      height: 45px;
+      animation-duration: 0.5s;
+      animation-delay: 0.25s;
+    }
+    &--33 {
+      left: 72%;
+      height: 19px;
+      animation-duration: 0.3s;
+      animation-delay: 0.08s;
+    }
+    &--34 {
+      left: 78%;
+      height: 48px;
+      animation-duration: 0.48s;
+      animation-delay: 0.18s;
+    }
+    &--35 {
+      left: 82%;
+      height: 17px;
+      animation-duration: 0.35s;
+      animation-delay: 0.28s;
+    }
+    &--36 {
+      left: 88%;
+      height: 42px;
+      animation-duration: 0.5s;
+      animation-delay: 0.11s;
+    }
+    &--37 {
+      left: 92%;
+      height: 21px;
+      animation-duration: 0.27s;
+      animation-delay: 0.21s;
+    }
+    &--38 {
+      left: 97%;
+      height: 50px;
+      animation-duration: 0.49s;
+      animation-delay: 0.01s;
+    }
+    &--39 {
+      left: 7%;
+      height: 16px;
+      animation-duration: 0.33s;
+      animation-delay: 0.11s;
+    }
+    &--40 {
+      left: 17%;
+      height: 44px;
+      animation-duration: 0.48s;
+      animation-delay: 0.21s;
+    }
+  }
+}
+
+@keyframes storm-fall {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(15deg);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(calc(70vh - 40px)) translateX(calc(-19vh - 10px))
+      rotate(15deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(calc(85vh + 30px)) translateX(calc(-23vh - 20px))
+      rotate(15deg);
+    opacity: 0.3;
+  }
+  90% {
+    transform: translateY(calc(95vh + 60px)) translateX(calc(-26vh - 25px))
+      rotate(15deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px)) translateX(calc(-27vh - 27px))
+      rotate(15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes splash {
+  0%,
+  75% {
+    opacity: 0;
+    transform: scale(0) rotate(-15deg);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.9) rotate(-15deg);
+  }
+  87% {
+    opacity: 0.7;
+    transform: scale(1.4) rotate(-15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.2) rotate(-15deg);
+  }
+}
+
+// Lightning effect
+.lightning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  z-index: 10001;
+  animation: lightning-flash 8s infinite;
+  opacity: 0;
+}
+
+@keyframes lightning-flash {
+  0%,
+  10%,
+  12%,
+  100% {
+    opacity: 0;
+  }
+  10.5% {
+    opacity: 0.8;
+  }
+  11% {
+    opacity: 0;
+  }
+  11.5% {
+    opacity: 1;
+  }
+}
+
+// Overlay for darkening during storm
+.storm-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 70, 90, 0.35);
+  pointer-events: none;
+  z-index: 9999;
+}

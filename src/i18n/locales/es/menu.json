@@ -1,0 +1,28 @@
+{
+  "title": "Lofi Valley Prototipo",
+  "subtitle": "Selecciona un modo para comenzar",
+  "cards": {
+    "designer": {
+      "title": "Diseñador",
+      "description": "Laboratorio y Herramientas"
+    },
+    "crops": {
+      "title": "Cultivos",
+      "description": "Entorno de Pruebas"
+    },
+    "game": {
+      "title": "Juego",
+      "description": "Prueba el estado actual"
+    }
+  },
+  "prototype": {
+    "thanks": "¡Gracias por probar Lofi Valley Engine!",
+    "notice": "Esta es la versión prototipo actual en desarrollo activo. Aún no tengo el sistema de audio listo (sé que es un juego lofi, ¡lo sé!).",
+    "openRadio": "Abrir Lofi Valley Radio (puede tardar un momento en cargar)"
+  },
+  "social": {
+    "github": "GitHub",
+    "discord": "Discord",
+    "bluesky": "Bluesky"
+  }
+}

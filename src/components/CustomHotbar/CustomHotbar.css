@@ -1,0 +1,15 @@
+/* CustomHotbar Styles - Lo-Fi Valley Design */
+
+.customHotbar {
+  background: var(--color-wood-medium);
+  border-radius: var(--radius-xl);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-float);
+  border: 3px solid var(--color-wood-light);
+}
+
+.customHotbar__slots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

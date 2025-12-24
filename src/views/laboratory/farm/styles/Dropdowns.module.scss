@@ -1,0 +1,38 @@
+.dropdown {
+  position: relative;
+
+  select {
+    padding: 0.375rem 2rem 0.375rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    background: rgba(40, 40, 55, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    appearance: none;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(50, 50, 65, 0.95);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgba(100, 180, 255, 0.6);
+      box-shadow: 0 0 0 2px rgba(100, 180, 255, 0.15);
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.625rem;
+  }
+}

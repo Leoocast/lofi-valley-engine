@@ -1,0 +1,71 @@
+/* HotbarSelector Styles - Lo-Fi Valley Design */
+
+.hotbarSelector {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hotbarSelector__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.hotbarSelector__button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-wood-dark);
+  border: 3px solid var(--color-wood-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-soft);
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-cream-light);
+}
+
+.hotbarSelector__button:hover {
+  background: var(--color-wood-medium);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.hotbarSelector__button--active {
+  background: var(--color-green-medium);
+  border-color: var(--color-green-dark);
+  box-shadow:
+    0 0 0 3px var(--color-green-medium),
+    var(--shadow-medium);
+}
+
+.hotbarSelector__emoji {
+  font-size: 1.25rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hotbarSelector__emoji::selection {
+  background: transparent;
+  color: inherit;
+}
+
+.hotbarSelector__button::selection {
+  background: transparent;
+  color: inherit;
+}
+
+.hotbarSelector__button:focus {
+  outline: none;
+}
+
+.hotbarSelector__button:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}

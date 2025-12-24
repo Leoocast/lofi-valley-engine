@@ -1,0 +1,27 @@
+{
+  "contract": {
+    "title": "ASOCIACIÓN DE RITMOS BOTÁNICOS",
+    "applicationTitle": "SOLICITUD DE NUEVO PRODUCTOR",
+    "assignment": "Asignación",
+    "assignmentValue": "Lofi Valley (Zona de Rehabilitación)",
+    "status": "Estatus",
+    "statusValue": "Novato",
+    "specialty": "Especialidad",
+    "specialtyValue": "Fusión Experimental",
+    "genreName": "Nombre del Género",
+    "genreValue": "JUNK",
+    "producerName": "Nombre del Productor",
+    "namePlaceholder": "Ingresa tu nombre...",
+    "signButton": "FIRMAR CONTRATO",
+    "processing": "PROCESANDO...",
+    "approved": "APROBADO"
+  },
+  "arrival": {
+    "welcome": "Bienvenido a Lofi Valley",
+    "producer": "Productor",
+    "startButton": "¡Empezar! 🎵"
+  },
+  "busTransition": {
+    "onTheWay": "En camino a Lofi Valley..."
+  }
+}

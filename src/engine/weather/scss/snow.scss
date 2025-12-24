@@ -1,0 +1,275 @@
+// Snow effect animations
+.snow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.snow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__flake {
+    position: absolute;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.6) 60%,
+      rgba(255, 255, 255, 0.2)
+    );
+    border-radius: 50%;
+    animation: snow-fall linear infinite;
+
+    &--1 {
+      left: 5%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 8s;
+      animation-delay: 0.13s;
+    }
+    &--2 {
+      left: 12%;
+      width: 6px;
+      height: 6px;
+      animation-duration: 9s;
+      animation-delay: 3.27s;
+    }
+    &--3 {
+      left: 20%;
+      width: 3px;
+      height: 3px;
+      animation-duration: 7s;
+      animation-delay: 6.81s;
+    }
+    &--4 {
+      left: 28%;
+      width: 5px;
+      height: 5px;
+      animation-duration: 8.5s;
+      animation-delay: 1.92s;
+    }
+    &--5 {
+      left: 35%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 9.5s;
+      animation-delay: 4.58s;
+    }
+    &--6 {
+      left: 43%;
+      width: 7px;
+      height: 7px;
+      animation-duration: 10s;
+      animation-delay: 7.14s;
+    }
+    &--7 {
+      left: 50%;
+      width: 3px;
+      height: 3px;
+      animation-duration: 7.5s;
+      animation-delay: 2.45s;
+    }
+    &--8 {
+      left: 58%;
+      width: 5px;
+      height: 5px;
+      animation-duration: 8.2s;
+      animation-delay: 5.73s;
+    }
+    &--9 {
+      left: 65%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 9.2s;
+      animation-delay: 0.88s;
+    }
+    &--10 {
+      left: 72%;
+      width: 6px;
+      height: 6px;
+      animation-duration: 8.8s;
+      animation-delay: 3.96s;
+    }
+    &--11 {
+      left: 80%;
+      width: 3px;
+      height: 3px;
+      animation-duration: 7.8s;
+      animation-delay: 6.22s;
+    }
+    &--12 {
+      left: 88%;
+      width: 5px;
+      height: 5px;
+      animation-duration: 9.8s;
+      animation-delay: 1.54s;
+    }
+    &--13 {
+      left: 95%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 8.3s;
+      animation-delay: 4.87s;
+    }
+    &--14 {
+      left: 8%;
+      width: 6px;
+      height: 6px;
+      animation-duration: 10.5s;
+      animation-delay: 7.39s;
+    }
+    &--15 {
+      left: 15%;
+      width: 3px;
+      height: 3px;
+      animation-duration: 7.2s;
+      animation-delay: 2.68s;
+    }
+    &--16 {
+      left: 23%;
+      width: 5px;
+      height: 5px;
+      animation-duration: 9.3s;
+      animation-delay: 5.41s;
+    }
+    &--17 {
+      left: 32%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 8.7s;
+      animation-delay: 0.35s;
+    }
+    &--18 {
+      left: 40%;
+      width: 7px;
+      height: 7px;
+      animation-duration: 11s;
+      animation-delay: 3.79s;
+    }
+    &--19 {
+      left: 48%;
+      width: 3px;
+      height: 3px;
+      animation-duration: 7.6s;
+      animation-delay: 6.55s;
+    }
+    &--20 {
+      left: 55%;
+      width: 5px;
+      height: 5px;
+      animation-duration: 8.9s;
+      animation-delay: 1.17s;
+    }
+    &--21 {
+      left: 62%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 9.7s;
+      animation-delay: 4.23s;
+    }
+    &--22 {
+      left: 70%;
+      width: 6px;
+      height: 6px;
+      animation-duration: 10.2s;
+      animation-delay: 7.68s;
+    }
+    &--23 {
+      left: 78%;
+      width: 3px;
+      height: 3px;
+      animation-duration: 7.9s;
+      animation-delay: 2.01s;
+    }
+    &--24 {
+      left: 85%;
+      width: 5px;
+      height: 5px;
+      animation-duration: 8.6s;
+      animation-delay: 5.19s;
+    }
+    &--25 {
+      left: 92%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 9.4s;
+      animation-delay: 0.62s;
+    }
+    &--26 {
+      left: 10%;
+      width: 6px;
+      height: 6px;
+      animation-duration: 10.8s;
+      animation-delay: 4.05s;
+    }
+    &--27 {
+      left: 18%;
+      width: 3px;
+      height: 3px;
+      animation-duration: 7.4s;
+      animation-delay: 6.93s;
+    }
+    &--28 {
+      left: 25%;
+      width: 5px;
+      height: 5px;
+      animation-duration: 8.4s;
+      animation-delay: 2.34s;
+    }
+    &--29 {
+      left: 33%;
+      width: 4px;
+      height: 4px;
+      animation-duration: 9.1s;
+      animation-delay: 5.86s;
+    }
+    &--30 {
+      left: 45%;
+      width: 7px;
+      height: 7px;
+      animation-duration: 11.5s;
+      animation-delay: 1.46s;
+    }
+  }
+}
+
+@keyframes snow-fall {
+  0% {
+    transform: translateY(-20px) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(25vh) translateX(20px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(-10px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(15px) rotate(270deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-5px) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+// Overlay for brightening during snow
+.snow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: rgba(220, 230, 240, 0.15);
+  pointer-events: none;
+  z-index: 9999;
+}
