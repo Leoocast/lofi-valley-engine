@@ -10,6 +10,13 @@
 
 **Lofi Valley** is a browser-based farming simulation game inspired by Stardew Valley, Animal Crossing, and Fae Farm. Built with performance and player freedom in mind, it features a deterministic headless game engine that separates simulation logic from rendering, allowing for smooth gameplay at variable speeds (x1, x2, x4, x10) without breaking game mechanics.
 
+> [!WARNING]
+> **Preview Build - Not Production Ready**
+>
+> This is a prototype/preview build shared publicly to showcase the headless architecture concept. The codebase is **not yet ready for production development** and requires significant cleanup, optimization, and refactoring (DRY principles, performance improvements, etc.).
+>
+> Feel free to explore the architecture and concepts, but expect rough edges and areas that need improvement. Contributions and feedback are welcome!
+
 ## ✨ Features
 
 - 🎮 **Headless Game Engine Architecture** - Deterministic simulation independent of rendering
