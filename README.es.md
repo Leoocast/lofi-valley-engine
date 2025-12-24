@@ -145,7 +145,7 @@ npm run tauri build  # Construye la aplicación de escritorio Tauri
 - [`/docs/game-engine-architecture.md`](./docs/game-engine-architecture.md) - Principios de arquitectura central
 - [`/docs/systems/`](./docs/systems/) - Documentación de sistemas del juego
 - [`/docs/tools/`](./docs/tools/) - Implementaciones de herramientas
-- [`/ai/context.md`](./ai/context.md) - Guías de colaboración con IA
+- [`/ai/README.md`](./ai/README.md) - Guías de colaboración con IA
 
 ## 🤝 Contribuir
 

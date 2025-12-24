@@ -35,11 +35,7 @@ export function useHoverSelection() {
     setHoveredEntityMove,
     setHoveredEntityDelete,
   }: UseHoverSelectionProps) {
-    if (
-      (mode !== "place" && mode !== "move" && mode !== "delete") ||
-      tileX < 0 ||
-      tileY < 0
-    ) {
+    if (mode !== "place" || tileX < 0 || tileY < 0) {
       setHoveredEntity(null)
       setHoveredEntityMove(null)
       setHoveredEntityDelete(null)
@@ -95,13 +91,8 @@ export function useHoverSelection() {
       }
     }
 
-    if (mode === "place") {
-      setHoveredEntity(found)
-    } else if (mode === "move") {
-      setHoveredEntityMove(found)
-    } else if (mode === "delete") {
-      setHoveredEntityDelete(found)
-    }
+    // Only handle 'place' mode since that's the only valid mode in EditorMode
+    setHoveredEntity(found)
   }
 
   return { updateHoverSelection }

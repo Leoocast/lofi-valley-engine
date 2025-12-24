@@ -56,7 +56,7 @@ export function getLogicalSize(sprite: Sprite) {
  */
 export function getVisualOffset(sprite: Sprite) {
   const logicalHeightPx = sprite.baseHeight * TILE_SIZE
-  const extra = sprite.spriteSheet.height - logicalHeightPx
+  const extra = (sprite.spriteSheet?.height || 0) - logicalHeightPx
   return { x: 0, y: -extra }
 }
 

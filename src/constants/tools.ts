@@ -12,6 +12,13 @@ export const TOOLS = [
 ] as const
 
 /**
+ * Mapa de herramientas por ID (derivado de TOOLS)
+ */
+export const TOOL_DEFINITIONS = Object.fromEntries(
+  TOOLS.map((tool) => [tool.id, tool]),
+) as Record<Tool, (typeof TOOLS)[number]>
+
+/**
  * Mapa de shortcuts a herramientas
  */
 export const TOOL_SHORTCUTS = {

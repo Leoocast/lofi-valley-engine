@@ -145,7 +145,7 @@ npm run tauri build  # Build Tauri desktop app
 - [`/docs/game-engine-architecture.md`](./docs/game-engine-architecture.md) - Core architecture principles
 - [`/docs/systems/`](./docs/systems/) - Game systems documentation
 - [`/docs/tools/`](./docs/tools/) - Tool implementations
-- [`/ai/context.md`](./ai/context.md) - AI collaboration guidelines
+- [`/ai/README.md`](./ai/README.md) - AI collaboration guidelines
 
 ## 🤝 Contributing
 
