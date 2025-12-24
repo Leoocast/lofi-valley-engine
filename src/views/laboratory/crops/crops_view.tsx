@@ -39,7 +39,7 @@ import { FARM_HEIGHT, FARM_WIDTH } from "./crops_farm_config"
 
 // Import map data
 import { CropTooltip } from "@/components/CropTooltip/CropTooltip"
-import Map1Data from "@/engine/data/maps/Map_1.json"
+import Map1Data from "@/engine/data/maps/map_1.json"
 
 /**
  * Vista principal de la granja en modo juego.
