@@ -1,1 +1,3 @@
-/* /index.html 200
+# SPA fallback - redirect all non-asset routes to index.html
+/assets/*  /assets/:splat  200
+/*  /index.html  200
